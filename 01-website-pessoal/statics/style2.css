@@ -46,7 +46,7 @@ body {
   color: green;
 }
 
-.nav-left li a:visited {
+.nav-left li a:link, .nav-left li a:visited {
   color: black;
 }
 

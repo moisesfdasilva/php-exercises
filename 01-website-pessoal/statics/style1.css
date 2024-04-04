@@ -49,7 +49,7 @@ body {
   color: green;
 }
 
-.nav-top li a:visited {
+.nav-top li a:link, .nav-top li a:visited {
   color: black;
 }
 
