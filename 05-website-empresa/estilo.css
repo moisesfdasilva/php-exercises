@@ -140,28 +140,60 @@ body {
   color: green;
 }
 
-/* .aside-bottom {
-  text-align: left;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-}
-
 .form {
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
 }
 
-.inp-inline {
-  width: 450px;
+.form-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 0px;
+  line-height: 8pt;
 }
 
-.text-area {
-  width: 450px;
-  height: 80px;
-} */
+.form-field-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  line-height: 8pt;
+}
+
+.label {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.input {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.input-msg {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.social-network {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 10px;
+}
+
+.network-img {
+  height: 30px;
+}
+
+.network {
+  padding-left: 10px;
+}
 
 .footer {
   background-color: #eeeeee;
@@ -174,12 +206,6 @@ body {
   bottom:0;
   left: 0;
 }
-
-/* @media screen and (max-width: 600px) and (min-width: 539px) {
-  .inp-inline, .text-area {
-    width: 200px;
-  }
-} */
 
 @media (max-width: 539px) {
   .inp-inline, .text-area {
