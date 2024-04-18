@@ -15,13 +15,39 @@
           <li><a href="paginasobre.html">Sobre</a></li>
           <li><a href="paginadeprodutos.php">Produtos</a></li>
           <li><a href="paginadenovidades.php">Novidades</a></li>
-          <li><a href="paginadecontato.php">Contato</a></li>
+          <li><a href="paginadecontato.html">Contato</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <section class="main-section">
-        <article class="article">
+        <article class="card">
+          <div class="text">
+            <h2>AEIOU</h2>
+            <h4>As Nossas Novidades</h4>
+            <p>
+              Atualmente começamos a inovar para tornar o atendimento 
+              aos trilheiros cada vez mais acessível e inclusivo, 
+              além de ampliarmos as nossas fronteiras.
+            </p>
+          </div>
+        </article>
+        <?php
+          $conexao = new mysqli("localhost","root","","empresa");
+          $consulta = $conexao->query("select * from novidades");
+          $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
+          foreach($resultado as $linha)
+            echo("<article class='card'><div class='text'><h3>"
+              .$linha['id_nov']." - ".$linha['resumo']."</h3><p>"
+              .$linha['descricao']."</p></div></article>"
+            );
+          $conexao->close();
+        ?>
+        <article class="recommendation">
+          <div class="text">
+            <h3>Garanta logo a sua vaga.</h3>
+            <p>Junte-se a nós!!!</p>
+          </div>
         </article>
       </section>
     </main>
