@@ -33,7 +33,6 @@ body {
 }
 
 .nav-top ul {
-  background-color: white;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,14 +41,19 @@ body {
   flex-wrap: wrap;
 }
 
+.nav-top ul li {
+  height: 60px;
+}
+
 .nav-top ul li a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 22px 16px;
   text-decoration: none;
 }
 
 .nav-top li a:hover:not(.active) {
+  background-color: #ebf3e7;
   color: green;
 }
 
@@ -140,6 +144,14 @@ body {
   color: green;
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -152,7 +164,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  padding-bottom: 0px;
   line-height: 8pt;
 }
 
@@ -165,18 +176,45 @@ body {
 }
 
 .label {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .input {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  border: 1px solid green;
+  border-radius: 10px;
 }
 
 .input-msg {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  border: 1px solid green;
+  border-radius: 10px;
+  width: 212px;
+  height: 50px;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: 900;
+  margin-top: 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .social-network {
@@ -185,6 +223,7 @@ body {
   align-items: center;
   justify-content: left;
   padding-bottom: 10px;
+  margin-left: 10px;
 }
 
 .network-img {
@@ -213,7 +252,7 @@ body {
   }
 
   .main-section {
-    padding-top: 78px;
+    padding-top: 107px;
   }
 
   .nav-top {

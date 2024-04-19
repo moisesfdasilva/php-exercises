@@ -23,8 +23,8 @@
       <section class="main-section">
         <article class="card">
           <div class="text">
-            <h2>AEIOU</h2>
-            <h4>Os Nossos Produtos:</h4>
+            <h2>RIO DE AVENTURAS TRILHAS</h2>
+            <h4>Nossos Produtos:</h4>
             <p>
               Apresentamos abaixo a descrição dos nossos produtos, 
               com os respectivos valores e quantidade de vagas 

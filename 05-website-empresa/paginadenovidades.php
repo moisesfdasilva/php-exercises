@@ -23,12 +23,13 @@
       <section class="main-section">
         <article class="card">
           <div class="text">
-            <h2>AEIOU</h2>
-            <h4>As Nossas Novidades</h4>
+            <h2>RIO DE AVENTURAS TRILHAS</h2>
+            <h4>Nossas Novidades</h4>
             <p>
-              Atualmente começamos a inovar para tornar o atendimento 
-              aos trilheiros cada vez mais acessível e inclusivo, 
-              além de ampliarmos as nossas fronteiras.
+              Atualmente começamos a inovar para tornar o atendimento aos 
+              trilheiros cada vez mais acessível e inclusivo, além de 
+              ampliarmos as nossas fronteiras. Assim, passamos a 
+              oferecer as novidades listadas abaixo.
             </p>
           </div>
         </article>
@@ -45,8 +46,10 @@
         ?>
         <article class="recommendation">
           <div class="text">
-            <h3>Garanta logo a sua vaga.</h3>
-            <p>Junte-se a nós!!!</p>
+            <h3>Observação:</h3>
+            <p>
+              Essas novidades devem ser solicitadas no momento do agendamento.
+            </p>
           </div>
         </article>
       </section>
