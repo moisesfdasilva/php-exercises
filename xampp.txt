@@ -1,0 +1,37 @@
+Instalar o Xampp no Linux +3 Dicas Expert:
+
+- baixar o pacote do Xampp basta acessar o site www.apachefriends.org.
+- abrir o terminal:
+  $ sudo chmod +x nome_do_pacote
+  $ sudo ./nome_do_pacote
+
+1 – Atalho para o Gerenciador
+- $ cd .local/share/applications
+- $ sudo touch xampp.desktop
+- $ sudo nano xampp.desktop
+- escrever
+[Desktop Entry]
+Encoding=UTF-8
+Name=XAMPP Control Panel
+Comment=Start and Stop XAMPP
+Exec=sudo /opt/lampp/manager-linux-x64.run
+Icon=/opt/lampp/htdocs/favicon.ico
+Categories=Development
+Type=Application
+Terminal=true
+
+2 – PHP do Xampp como padrão do sistema
+- verificar se está instalado:
+  $ php -v
+- sudo ln -s /opt/lampp/bin/php /usr/bin/php
+
+3 – Alterar caminho da pasta htdocs
+- sudo nano /opt/lampp/apache2/conf/httpd.conf
+- alterar as linhas
+  - User Daemon e Group Daemon e altere para o seu usuário e grupo
+  - DocumentRoot e Directory altere o caminho para Ex.: /home/nome_do_usuário/www
+
+Obs: se não conseguir alterar, por conta da altorização, utilize o VsCode.
+
+Fonte:
+<https://www.nerdlivre.com.br/como-instalar-o-xampp-no-linux-3-dicas-expert/>
