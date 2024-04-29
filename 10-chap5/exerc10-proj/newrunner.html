@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <title>Runner Object</title>
+    <script src="gettshirtsizes.js"></script>
+  </head>
+  <body>
+    <h1>Runner Object Creator</h1>
+    <div>
+      <form method="post" action="newrunner.php">
+        <h2>
+          Please complete ALL fields. Please note the
+          required format of information.
+        </h2>
+        Your Runner's Name (max 70 characters, alphabetic)
+        <input
+          type="text"
+          pattern="[a-zAZ ]*"
+          title="Up to 70 Alphabetic Characters"
+          maxlength="70"
+          name="name"
+          id="name"
+        /><br/>
+        Your Runner's Address (max 200 characters, alphabetic)
+        <input
+          type="text"
+          pattern="[a-zAZ ]*"
+          title="Up to 200 Alphabetic Characters"
+          maxlength="200"
+          name="address"
+          id="address"
+        /><br/>
+        Your Runner's Gender (max 20 characters, alphabetic)
+        <input
+          type="text"
+          pattern="[a-zAZ ]*"
+          title="Up to 20 Alphabetic Characters"
+          maxlength="20"
+          name="gender"
+          id="gender"
+        /><br/>
+        Your Runner's Age (numeric only)
+        <input
+          type="number"
+          min="1"
+          max="125"
+          name="age"
+          id="age"
+        /><br/>
+        Your Runner's T-Shirt Size (max 20 characters, alphabetic)
+        <script>
+          AjaxRequest();
+        </script>
+        <div id="AjaxResponse"></div><br>
+        <input type="submit" value="Click to create your runner"/>
+      </form>
+    </div>
+  </body>
+</html>
