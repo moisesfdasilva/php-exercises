@@ -31,7 +31,7 @@
       }
       else { exit; }
     }
-    function set_dog_name($value) : bool {
+    function set_dog_name($value) {
       $error_message = TRUE;
       (ctype_alpha($value) && strlen($value) <= 20) ?
         $this->dog_name = $value : $this->error_message = FALSE;
