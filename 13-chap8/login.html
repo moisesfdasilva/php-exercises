@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <title>Dog Object</title>
+  </head>
+  <body>
+    <form method="post" action="">
+      Username:
+      <input
+        type="text"
+        pattern=".{8,}"
+        title="Userid must contain eight or more characters."
+        name="username"
+        id="username"
+        required
+      /><br>
+      Password:
+      <input
+        type="password"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Password must contain at least one number, one
+          uppercase and lowercase letter, and at least 8 total characters."
+        name="password"
+        id="password"
+        required
+      /><br>
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</html>
