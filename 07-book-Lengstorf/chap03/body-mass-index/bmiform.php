@@ -1,5 +1,5 @@
 <?php
-  $form = "
+  $info = "
     <form method='post' action='index.php?page=bmi'>
       <h3>Calculate Your Body Mass Index (BMI)</h3>  
       <p>Height</p>
