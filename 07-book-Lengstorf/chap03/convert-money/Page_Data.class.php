@@ -1,8 +1,8 @@
 <?php
-  class Bmi_Page {
-    private string $title = "";
-    private string $content = "";
-    private string $css = "";
+  class Page_Data {
+    public string $title = "";
+    public string $content = "";
+    public string $css = "";
 
     function __construct() {
       $this->title = "Title Goes Here";
@@ -37,7 +37,7 @@
       return $this->css;
     }
     public function setCss(string $value) {
-      if (strpos($value, '^')) {
+      if (strpos($value, 'css')) {
         $this->css = $value;
       }
     }
