@@ -23,12 +23,12 @@
       return $this->content;
     }
     public function setContent(string $value) {
-      if (strpos($value, '<')) {
+      if (strpos($value, '>')) {
         $this->content = $value;
       }
     }
     public function appendContent(string $value) {
-      if (strpos($value, '<')) {
+      if (strpos($value, '>')) {
         $this->content .= $value;
       }
     }

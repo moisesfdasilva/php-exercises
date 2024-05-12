@@ -12,7 +12,7 @@
     //Glob will filter out all values within the current folder which do not have 
     // the file ending shown It will then create an array in a format similar to the 
     // following.
-    $images = glob("*.jpg");
+    $images = glob("*.png");
     foreach($images as $image) {
       $out .= '<li><img src="'.$dir_name. '/' .$image.'" /></li>';
     }

@@ -16,7 +16,7 @@
     $numberOfImages = 0;
     $dir_name = "imgs";
     chdir($dir_name);
-    $images = glob("*.jpg");
+    $images = glob("*.png");
     //filesize method returns the size of the file in bytes
     //500000 is equivalent to 500KB (kilobytes)
     foreach($images as $image) {
