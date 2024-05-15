@@ -1,0 +1,16 @@
+;;;;;;;;;;;;;;;;
+; File Uploads ;
+;;;;;;;;;;;;;;;;
+; Whether to allow HTTP file uploads.
+; http://php.net/file-uploads
+file_uploads=On
+; Temporary directory for HTTP uploaded files (will use system
+default if not
+; specified).
+; http://php.net/upload-tmp-dir
+upload_tmp_dir="C:\xampp8.1.1\tmp"
+; Maximum allowed size for uploaded files.
+; http://php.net/upload-max-filesize
+upload_max_filesize=40M
+; Maximum number of files that can be uploaded via a single request
+max_file_uploads=20
