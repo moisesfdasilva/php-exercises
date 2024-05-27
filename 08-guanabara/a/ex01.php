@@ -1,6 +1,4 @@
 <?php
-  //https://www.youtube.com/watch?v=JFEelabfc1o&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&index=21
-  //14:19
   date_default_timezone_set("America/Sao_Paulo"); //GMT -3
   $day = date("d/M/Y");
   $hour = date("G:i:s T");
