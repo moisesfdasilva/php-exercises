@@ -3,11 +3,9 @@
   if ($numberIsSubmitted){
     $number = $_POST['numero'];
     $info = "<p>O número escolhido foi $number.</p>";
-    $res = $number - 1;
-    $info .= "<p>O seu antecessor é $res</p>.";
-    $res = $number + 1;
-    $info .= "<p>O seu sucessor é $res</p>.";
-    $info .= "<p><a href='index.php?page=main'>Voltar.</a></p>";
+    $info .= "<p>O seu antecessor é " . ($number - 1) . ".</p>";
+    $info .= "<p>O seu sucessor é " . ($number + 1) . ".</p>";
+    $info .= "<p><a href='index.php?page=main'>Voltar</a></p>";
   } else {
     include_once "main.php";
   }
