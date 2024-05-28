@@ -2,7 +2,7 @@
   $info = "";
   include_once "Page_Data.class.php";
   $pageData = new Page_Data();
-  $pageData->setTitle("Desafio 004: Conversor de Moedas avançado");
+  $pageData->setTitle("Desafio 003: Conversor de Moedas básico");
   $pageData->setContent("");
   $navigationIsClicked = isset($_GET['page']);
   if ($navigationIsClicked) {
