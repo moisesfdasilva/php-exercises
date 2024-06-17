@@ -28,10 +28,10 @@
       return $model;
     }
 
-    public function saveEntry($title, $entry) {
-      $entrySQL = "INSERT INTO blog_entry (title, entry_text)
-        VALUES (?, ?)";
-      $formData = array($title, $entry);
+    public function saveEntry($title, $entry, $img) {
+      $entrySQL = "INSERT INTO blog_entry (title, entry_text, image)
+        VALUES (?, ?, ?)";
+      $formData = array($title, $entry, $img);
       $entryStatement = $this->executeSQL($entrySQL, $formData);
     }
 
@@ -41,17 +41,18 @@
       $statement = $this->executeSQL($sql);
       return $statement;
     }
-    //Partial code for models/Newest_Blog_Entry_Table.class.php
-    //declare new method
-    public function updateEntry($id, $title, $entry) {
+
+    public function updateEntry($id, $title, $entry, $img) {
       $sql = "UPDATE blog_entry
         SET title = ?,
-        entry_text = ?
+        entry_text = ?,
+        image = ?
         WHERE entry_id = ?";
-      $data = array($title, $entry, $id);
+      $data = array($title, $entry, $img, $id);
       $statement = $this->executeSQL($sql, $data) ;
       return $statement;
     }
+
     public function searchEntry($searchTerm) {
       $sql = "SELECT entry_id, title, image FROM blog_entry
         WHERE title LIKE ?
@@ -60,21 +61,18 @@
       $statement = $this->executeSQL($sql, $data);
       return $statement;
     }
-    //edit existing method
+
     public function deleteEntry($id) {
-      //new code: delete any comments before deleting entry
       $this->deleteCommentsByID($id);
       $sql = "DELETE FROM blog_entry WHERE entry_id = ?";
       $data = array($id);
       $statement = $this->executeSQL($sql, $data);
     }
-    //new code: declare a new private method inside Blog_Entry_Table.class.php
+
     private function deleteCommentsByID($id) {
       include_once "models/Comment_Table.class.php";
-      //create a Comment_Table object
-      $comments = new Comment_Table( $this->db );
-      //delete any comments before deleting entry
-      $comments->deleteByEntryId( $id );
+      $comments = new Comment_Table($this->db);
+      $comments->deleteByEntryId($id);
     }
   }
 ?>

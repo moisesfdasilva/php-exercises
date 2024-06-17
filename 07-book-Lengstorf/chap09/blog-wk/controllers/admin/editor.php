@@ -7,10 +7,12 @@
     $id = clean_input($_POST['id']);
     $title = clean_input($_POST['title']);
     $entry = clean_input($_POST['entry']);
+    $img = clean_input($_POST['image']);
+
     if (($buttonClicked === 'save') and ($id === '0')) {
-      $entryTable->saveEntry($title, $entry);
+      $entryTable->saveEntry($title, $entry, $img);
     } else if (($buttonClicked === 'save') and ($id != '0')) {
-      $entryTable->updateEntry($id, $title, $entry);
+      $entryTable->updateEntry($id, $title, $entry, $img);
     } else if ($buttonClicked === 'delete') {
       $entryTable->deleteEntry($id);
     }
