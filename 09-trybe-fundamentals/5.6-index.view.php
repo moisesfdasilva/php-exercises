@@ -38,5 +38,8 @@
             <li><?= $p->apresentar(); ?></li>
         <?php endforeach; ?>
     </ol>
+    <ol>
+        <li><?= $pessoas[2]->exibirInformacoes(); ?></li>
+    </ol>
 </body>
 </html>

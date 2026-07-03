@@ -1,9 +1,9 @@
 <?php
 
     class Pessoa {
-        public $nome;
+        protected $nome;
         public $nascimento;
-        public $cpf;
+        private $cpf;
         public $endereco;
         public $cidade;
         public $estado;
@@ -24,6 +24,14 @@
             $this->estado = $estado;
             $this->pais = $pais;
             $this->email = $email;
+        }
+
+        public function getNome() {
+            return $this->nome;
+        }
+
+        public function getCpf() {
+            return $this->cpf;
         }
 
         public function apresentar() {
