@@ -1,0 +1,9 @@
+
+services:
+  php-server:
+    image: php:8.2-apache
+    container_name: php-server
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
